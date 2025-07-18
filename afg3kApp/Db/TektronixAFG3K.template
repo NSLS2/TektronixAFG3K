@@ -1,0 +1,35 @@
+
+record(stringin, "$(P)$(R)Manufacturer") {
+    field(DESC, "Manufacturer")
+    field(DTYP, "stream")
+    field(INP,  "@afg3k.proto getDeviceID($(P)$(R)Model, $(P)$(R)SerialNumber) $(PORT)")
+    field(PINI, "YES")
+    field(SCAN, "Passive")
+}
+
+record(stringin, "$(P)$(R)Model") {
+    field(DESC, "Model")
+    field(DTYP, "Soft Channel")
+}
+
+record(stringin, "$(P)$(R)SerialNumber") {
+    field(DESC, "Serial Number")
+    field(DTYP, "Soft Channel")
+
+}
+
+record(bo, "$(P)$(R)OutputCmd"){
+    field(DESC, "Output Enable")
+    field(DTYP, "stream")
+    field(OUT, "@afg3k.proto setOutput() $(PORT)")
+    field(ZNAM, "OFF")
+    field(ONAM, "ON")
+    field(SCAN, "I/O Intr")
+}
+
+record(bi, "$(P)$(R)OutputStatus") {
+    field(DESC, "Output Status")
+    field(DTYP, "stream")
+    field(INP, "@afg3k.proto getOutputStatus() $(PORT)")
+    field(SCAN, "1 second")
+}

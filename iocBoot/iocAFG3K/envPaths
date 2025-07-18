@@ -1,0 +1,3 @@
+epicsEnvSet("IOC","iocAFG3000")
+epicsEnvSet("TOP","/nsls2/users/jwlodek/Workspace/TektronixAFG3K")
+epicsEnvSet("EPICS_BASE","/usr/lib/epics")

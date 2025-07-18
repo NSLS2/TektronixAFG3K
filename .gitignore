@@ -1,0 +1,8 @@
+O.*/
+lib/
+db/
+dbd/
+bin/
+*.swp
+.vscode/
+autorun.cmd
