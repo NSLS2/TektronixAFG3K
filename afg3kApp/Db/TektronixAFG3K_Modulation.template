@@ -1,0 +1,118 @@
+record(ao, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):InternalFrequency") {
+    field(DESC, "Internal Frequency")
+    field(DTYP, "stream")
+    field(LOLO, "0.002")
+    field(HIHI, "50.0")
+    field(OUT, "@afg3k.proto setModIntFreq($(SOURCE_NUM), $(MOD_TYPE)) $(PORT)")
+    field(VAL, "10.0")
+    field(EGU, "kHz")
+    field(SCAN, "Passive")
+}
+
+record(ai, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):InternalFrequency_RBV") {
+    field(DESC, "Internal Frequency")
+    field(DTYP, "stream")
+    field(EGU, "Hz")
+    field(INP, "@afg3k.proto getModIntFreq($(SOURCE_NUM), $(MOD_TYPE)) $(PORT)")
+    field(SCAN, "1 second")
+}
+
+# record(bo, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):IntFreqMinMax") {
+#     field(DESC, "External Function")
+#     field(DTYP, "stream")
+#     field(OUT, "@afg3k.proto setModIntFreqMinMax($(SOURCE_NUM), $(MOD_TYPE)) $(PORT)")
+#     field(ZNAM, "MIN")
+#     field(ONAM, "MAX")
+#     field(SCAN, "Passive")
+# }
+
+
+record(mbbo, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):InternalFunction"){
+    field(DESC, "Internal Function")
+    field(DTYP, "stream")
+    field(OUT, "@afg3k.proto setModIntFunc($(SOURCE_NUM), $(MOD_TYPE)) $(PORT)")
+    field(ZRVL, "0")
+    field(ONVL, "1")
+    field(TWVL, "2")
+    field(THVL, "3")
+    field(FRVL, "4")
+    field(FVVL, "5")
+    field(SXVL, "6")
+    field(SVVL, "7")
+    field(EIVL, "8")
+    field(NIVL, "9")
+    field(ZRST, "SIN")
+    field(ONST, "SQU")
+    field(TWST, "TRI")
+    field(THST, "RAMP")
+    field(FRST, "NRAM")
+    field(FVST, "PRN")
+    field(SXST, "USER1")
+    field(SVST, "USER2")
+    field(EIST, "USER3")
+    field(NIST, "USER4")
+    field(SCAN, "Passive")
+}
+
+record(mbbi, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):InternalFunction_RBV") {
+    field(DESC, "Internal Function Status")
+    field(DTYP, "stream")
+    field(INP, "@afg3k.proto getModIntFunc($(SOURCE_NUM), $(MOD_TYPE)) $(PORT)")
+    field(ZRVL, "0")
+    field(ONVL, "1")
+    field(TWVL, "2")
+    field(THVL, "3")
+    field(FRVL, "4")
+    field(FVVL, "5")
+    field(SXVL, "6")
+    field(SVVL, "7")
+    field(EIVL, "8")
+    field(NIVL, "9")
+    field(ZRST, "SIN")
+    field(ONST, "SQU")
+    field(TWST, "TRI")
+    field(THST, "RAMP")
+    field(FRST, "NRAM")
+    field(FVST, "PRN")
+    field(SXST, "USER1")
+    field(SVST, "USER2")
+    field(EIST, "USER3")
+    field(NIST, "USER4")
+    field(SCAN, "1 second")
+}
+
+
+record(bo, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Source") {
+    field(DESC, "Source")
+    field(DTYP, "stream")
+    field(OUT, "@afg3k.proto setModSource($(SOURCE_NUM), $(MOD_TYPE)) $(PORT)")
+    field(ZNAM, "INT")
+    field(ONAM, "External")
+    field(SCAN, "Passive")
+}
+
+record(bi, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Source_RBV") {
+    field(DESC, "Source Status")
+    field(DTYP, "stream")
+    field(INP, "@afg3k.proto getModSource($(SOURCE_NUM), $(MOD_TYPE)) $(PORT)")
+    field(ZNAM, "INT")
+    field(ONAM, "EXT")
+    field(SCAN, "1 second")
+}
+
+record(bo, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Enable") {
+    field(DESC, "Enable")
+    field(DTYP, "stream")
+    field(OUT, "@afg3k.proto setModEnable($(SOURCE_NUM), $(MOD_TYPE)) $(PORT)")
+    field(ZNAM, "OFF")
+    field(ONAM, "ON")
+    field(SCAN, "Passive")
+}
+record(bi, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Enable_RBV") {
+    field(DESC, "Enable Status")
+    field(DTYP, "stream")
+    field(INP, "@afg3k.proto getModEnable($(SOURCE_NUM), $(MOD_TYPE)) $(PORT)")
+    field(ZNAM, "OFF")
+    field(ONAM, "ON")
+    field(SCAN, "1 second")
+}

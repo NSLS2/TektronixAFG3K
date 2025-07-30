@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <display version="2.0.0">
+    <name>TektronixAFG3K_PM_FM</name>
+    <widget type="label" version="2.0.0">
+      <name>7fe2360d</name>
+      <x>10</x>
+      <y>70</y>
+      <width>150</width>
+      <height>20</height>
+      <text>Internal Frequency</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>e3e30a58</name>
+      <x>170</x>
+      <y>70</y>
+      <width>150</width>
+      <height>20</height>
+      <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):InternalFrequency</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>54a4c22c</name>
+      <x>10</x>
+      <y>110</y>
+      <width>150</width>
+      <height>20</height>
+      <text>Internal Frequency</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>84602cf0</name>
+      <x>170</x>
+      <y>110</y>
+      <width>150</width>
+      <height>20</height>
+      <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):InternalFrequency_RBV</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>842996dd</name>
+      <x>10</x>
+      <y>150</y>
+      <width>150</width>
+      <height>20</height>
+      <text>Internal Function</text>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>e6dc5007</name>
+      <x>170</x>
+      <y>150</y>
+      <width>150</width>
+      <height>20</height>
+      <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):InternalFunction</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>b155ddb7</name>
+      <x>10</x>
+      <y>190</y>
+      <width>150</width>
+      <height>20</height>
+      <text>Internal Function Status</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>02a9842a</name>
+      <x>170</x>
+      <y>190</y>
+      <width>150</width>
+      <height>20</height>
+      <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):InternalFunction_RBV</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>96fb5121</name>
+      <x>10</x>
+      <y>230</y>
+      <width>150</width>
+      <height>20</height>
+      <text>Source</text>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>38689a95</name>
+      <x>170</x>
+      <y>230</y>
+      <width>150</width>
+      <height>20</height>
+      <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Source</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>ec7b857b</name>
+      <x>10</x>
+      <y>270</y>
+      <width>150</width>
+      <height>20</height>
+      <text>Source Status</text>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>35fbc7b3</name>
+      <x>170</x>
+      <y>270</y>
+      <width>20</width>
+      <height>20</height>
+      <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Source_RBV</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>24329bfa</name>
+      <x>10</x>
+      <y>310</y>
+      <width>150</width>
+      <height>20</height>
+      <text>Enable</text>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>ed773944</name>
+      <x>170</x>
+      <y>310</y>
+      <width>150</width>
+      <height>20</height>
+      <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Enable</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>e276265e</name>
+      <x>10</x>
+      <y>350</y>
+      <width>150</width>
+      <height>20</height>
+      <text>Enable Status</text>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>67b36530</name>
+      <x>170</x>
+      <y>350</y>
+      <width>20</width>
+      <height>20</height>
+      <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Enable_RBV</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>216a0ddd</name>
+      <x>10</x>
+      <y>390</y>
+      <width>150</width>
+      <height>20</height>
+      <text>Deviation</text>
+    </widget>
+    <widget type="textentry" version="2.0.0">
+      <name>8a44de4e</name>
+      <x>170</x>
+      <y>390</y>
+      <width>150</width>
+      <height>20</height>
+      <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Deviation</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>d82d61dc</name>
+      <x>10</x>
+      <y>430</y>
+      <width>150</width>
+      <height>20</height>
+      <text>Deviation Status</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>a95c6a4d</name>
+      <x>170</x>
+      <y>430</y>
+      <width>150</width>
+      <height>20</height>
+      <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Deviation_RBV</pv_name>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>9969fae5</name>
+      <x>0</x>
+      <y>0</y>
+      <width>330</width>
+      <height>50</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>72af74a8</name>
+      <x>0</x>
+      <y>0</y>
+      <width>330</width>
+      <height>50</height>
+      <text>TektronixAFG3K_PM_FM</text>
+      <foreground_color>
+        <color red="255" blue="255" green="255" alpha="255"/>
+      </foreground_color>
+      <font>
+        <font family="Liberation Sans" size="32" style="REGULAR"/>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <height>1210</height>
+    <width>330</width>
+  </display>

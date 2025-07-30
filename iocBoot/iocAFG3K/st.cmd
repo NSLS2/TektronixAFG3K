@@ -1,6 +1,6 @@
 #!../../bin/linux-x86_64/AFG3000App
 
-< /epics/common/xf31id1-ioc1-netsetup.cmd
+< /epics/common/xf31id1-ioc2-netsetup.cmd
 
 errlogInit(20000)
 < envPaths
@@ -11,7 +11,7 @@ AFG3000App_registerRecordDeviceDriver(pdbbase)
 
 # Define asyn port name
 epicsEnvSet("PORT", "DRV1")
-epicsEnvSet("PREFIX", "DEV:AFG3011:")
+epicsEnvSet("PREFIX", "TST:AFG3K")
 epicsEnvSet("STREAM_PROTOCOL_PATH", "$(TOP)/protocol")
 
 
@@ -31,8 +31,10 @@ asynOctetSetInputEos("$(PORT)", 0, "\n")
 #asynSetTraceIOMask("$(PORT)", -1, 0x2)
 
 dbLoadRecords("$(TOP)/db/TektronixAFG3K.template", "P=$(PREFIX), R=, PORT=$(PORT)")
-dbLoadRecords("$(EPICS_BASE)/db/asynRecord.db", "P=$(PREFIX), R=AsynIO, PORT=$(PORT), ADDR=0, TIMEOUT=1, OMAX=0, IMAX=0")
-# dbLoadRecords("$(EPICS_BASE)/db/iocAdminSoft.db", "IOC=$(PREFIX)")
+dbLoadRecords("$(TOP)/db/TektronixAFG3K_Output.template", "P=$(PREFIX), R=:, OUTPUT_NUM=1, PORT=$(PORT)")
+dbLoadRecords("$(TOP)/db/TektronixAFG3K_Source.template", "P=$(PREFIX), R=:, SOURCE_NUM=1, PORT=$(PORT)")
+dbLoadRecords("$(EPICS_BASE)/db/asynRecord.db", "P=$(PREFIX):, R=AsynIO, PORT=$(PORT), ADDR=0, TIMEOUT=1, OMAX=0, IMAX=0")
 
+# dbLoadRecords("$(EPICS_BASE)/db/iocAdminSoft.db", "IOC=$(PREFIX)")
 
 iocInit()

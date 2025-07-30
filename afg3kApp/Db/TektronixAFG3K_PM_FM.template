@@ -1,0 +1,17 @@
+include "TektronixAFG3K_Modulation.template"
+
+record(ao, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Deviation") {
+    field(DESC, "Deviation")
+    field(DTYP, "stream")
+    field(EGU, "kHz")
+    field(OUT, "@afg3k.proto setModDeviation($(SOURCE_NUM), $(MOD_NUM)) $(PORT)")
+    field(SCAN, "Passive")
+}
+
+record(ai, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Deviation_RBV") {
+    field(DESC, "Deviation Status")
+    field(DTYP, "stream")
+    field(EGU, "kHz")
+    field(INP, "@afg3k.proto getModDeviationStatus($(SOURCE_NUM)) $(PORT)")
+    field(SCAN, "1 second")
+}

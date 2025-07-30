@@ -12,6 +12,11 @@ include $(TOP)/configure/CONFIG
 # databases, templates, substitutions like this
 
 DB += TektronixAFG3K.template
+DB += TektronixAFG3K_Modulation.template
+DB += TektronixAFG3K_PM_FM.template
+DB += TektronixAFG3K_Output.template
+DB += TektronixAFG3K_AM.template
+DB += TektronixAFG3K_Source.template
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
