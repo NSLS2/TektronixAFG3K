@@ -1,6 +1,6 @@
 include "TektronixAFG3K_Modulation.template"
 
-record("$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Depth") {
+record(ao, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Depth") {
     field(DESC, "AM mod Depth")
     field(DTYP, "stream")
     field(HIHI, "120")
@@ -10,7 +10,7 @@ record("$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Depth") {
     field(SCAN, "I/O Intr")
 }
 
-record("$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Depth_RBV") {
+record(ai, "$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Depth_RBV") {
     field(DESC, "AM mod Depth Status")
     field(DTYP, "stream")
     field(HIHI, "120")

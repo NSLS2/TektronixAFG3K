@@ -231,3 +231,110 @@ getAmpUnits {
 }
 
 ###
+
+setPhase {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:PHAS:ADJ %f";
+}
+
+getPhase {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:PHAS:ADJ?";
+    in "%f";
+}
+
+setRampSymmetry {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:FUNC:RAMP:SYMM %f";
+}
+
+getRampSymmetry {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:FUNC:RAMP:SYMM?";
+    in "%f";
+}
+
+
+setHighAmp {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:VOLT:LEV:IMM:HIGH %fV";
+}
+
+getHighAmp {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:VOLT:LEV:IMM:HIGH?";
+    in "%f";
+}
+
+
+setLowAmp {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:VOLT:LEV:IMM:LOW %fV";
+}
+
+getLowAmp {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:VOLT:LEV:IMM:LOW?";
+    in "%f";
+}
+
+
+setVoltageOffset {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:VOLT:LEV:IMM:OFFS %fV";
+}
+
+getVoltageOffset {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:VOLT:LEV:IMM:OFFS?";
+    in "%f";
+}
+
+setAmplitude {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:VOLT:LEV:IMM:AMPL %fV";
+}
+
+getAmplitude {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:VOLT:LEV:IMM:AMPL?";
+    in "%f";
+}
+
+setFreqStart {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:FREQ:STAR %fkHz";
+}
+
+getFreqStart {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:FREQ:STAR?";
+    in "%f";
+}
+
+setFreqStop {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:FREQ:STOP %fkHz";
+}
+
+getFreqStop {
+    wait 50;
+    ExtraInput=Ignore;
+    out "SOUR\$1:FREQ:STOP?";
+    in "%f";
+}

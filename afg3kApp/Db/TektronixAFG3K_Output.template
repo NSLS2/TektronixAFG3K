@@ -1,3 +1,9 @@
+record(ai, "$(P)$(R)$(OUTPUT_NUM):Name_RBV"){
+    field(DESC, "Ouput #")
+    field(DTYP, "Soft Channel")
+    field(VAL, "$(OUTPUT_NUM)")
+}
+
 record(bo, "$(P)$(R)$(OUTPUT_NUM):Enable") {
     field(DESC, "Output Cmd")
     field(DTYP, "stream")

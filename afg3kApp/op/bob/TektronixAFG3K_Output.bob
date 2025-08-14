@@ -1,125 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <display version="2.0.0">
     <name>TektronixAFG3K_Output</name>
+    <widget type="rectangle" version="2.0.0">
+      <name>0da67ee7</name>
+      <x>0</x>
+      <y>6</y>
+      <transparent>true</transparent>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </line_color>
+      <width>490</width>
+      <height>155</height>
+    </widget>
     <widget type="label" version="2.0.0">
-      <name>829067bb</name>
+      <name>6f17061f</name>
       <x>10</x>
-      <y>70</y>
+      <y>30</y>
+      <width>150</width>
+      <height>20</height>
+      <text>Ouput #</text>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>6876ee1b</name>
+      <x>170</x>
+      <y>30</y>
+      <width>150</width>
+      <height>20</height>
+      <pv_name>$(P)$(R)$(OUTPUT_NUM):Name_RBV</pv_name>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>21b2c519</name>
+      <x>10</x>
+      <y>60</y>
       <width>150</width>
       <height>20</height>
       <text>Output Cmd</text>
     </widget>
     <widget type="choice" version="2.0.0">
-      <name>f0c41f61</name>
+      <name>0eb15cd1</name>
       <x>170</x>
-      <y>70</y>
+      <y>60</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Enable</pv_name>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>46aad551</name>
-      <x>10</x>
-      <y>110</y>
-      <width>150</width>
-      <height>20</height>
-      <text>Output Status</text>
-    </widget>
     <widget type="led" version="2.0.0">
-      <name>31b903f7</name>
-      <x>170</x>
-      <y>110</y>
+      <name>8dc2a2ab</name>
+      <x>330</x>
+      <y>60</y>
       <width>20</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Enable_RBV</pv_name>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>add81aae</name>
+      <name>d3056dfc</name>
       <x>10</x>
-      <y>150</y>
+      <y>90</y>
       <width>150</width>
       <height>20</height>
       <text>Polarity</text>
     </widget>
     <widget type="choice" version="2.0.0">
-      <name>0cb44d4e</name>
+      <name>dd0c740c</name>
       <x>170</x>
-      <y>150</y>
+      <y>90</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Polarity</pv_name>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>7f94e079</name>
-      <x>10</x>
-      <y>190</y>
-      <width>150</width>
-      <height>20</height>
-      <text>Polarity Status</text>
-    </widget>
     <widget type="led" version="2.0.0">
-      <name>cc89c9e5</name>
-      <x>170</x>
-      <y>190</y>
+      <name>7e11d72f</name>
+      <x>330</x>
+      <y>90</y>
       <width>20</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Polarity_RBV</pv_name>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>e793019a</name>
+      <name>13475b72</name>
       <x>10</x>
-      <y>230</y>
+      <y>120</y>
       <width>150</width>
       <height>20</height>
       <text>Impedance</text>
     </widget>
     <widget type="textentry" version="2.0.0">
-      <name>a64af578</name>
+      <name>ef47bbdb</name>
       <x>170</x>
-      <y>230</y>
+      <y>120</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Impedance</pv_name>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>bc8220df</name>
-      <x>10</x>
-      <y>270</y>
-      <width>150</width>
-      <height>20</height>
-      <text>Impedence Status</text>
-    </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>ff358f1f</name>
-      <x>170</x>
-      <y>270</y>
+      <name>9366a8cc</name>
+      <x>330</x>
+      <y>120</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Impedance_RBV</pv_name>
     </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>07ce77b0</name>
-      <x>0</x>
-      <y>0</y>
-      <width>330</width>
-      <height>50</height>
-    </widget>
     <widget type="label" version="2.0.0">
-      <name>a70618db</name>
-      <x>0</x>
+      <name>6172c421</name>
+      <x>10</x>
       <y>0</y>
-      <width>330</width>
-      <height>50</height>
+      <width>480</width>
+      <height>10</height>
       <text>TektronixAFG3K_Output</text>
       <foreground_color>
         <color red="255" blue="255" green="255" alpha="255"/>
       </foreground_color>
+      <auto_size>true</auto_size>
       <font>
-        <font family="Liberation Sans" size="32" style="REGULAR"/>
+        <font family="Liberation Sans" size="18" style="REGULAR"/>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>2</border_width>
+      <border_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </border_color>
+      <background_color>
+        <color red="100" blue="100" green="100" alpha="255"/>
+      </background_color>
+      <transparent>false</transparent>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <height>1210</height>
-    <width>330</width>
+    <background_color>
+      <color red="179" blue="179" green="179" alpha="255"/>
+    </background_color>
+    <height>160</height>
+    <width>490</width>
   </display>

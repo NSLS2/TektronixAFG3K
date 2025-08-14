@@ -11,11 +11,11 @@ AFG3000App_registerRecordDeviceDriver(pdbbase)
 
 # Define asyn port name
 epicsEnvSet("PORT", "DRV1")
-epicsEnvSet("PREFIX", "TST:AFG3K")
+epicsEnvSet("PREFIX", "TST:AFG3011")
 epicsEnvSet("STREAM_PROTOCOL_PATH", "$(TOP)/protocol")
 
 
-epicsEnvSet("PORT", "AFG3011")
+epicsEnvSet("PORT", "AFG3K")
 vxi11Configure("$(PORT)", "10.69.58.90", 0, "0.0", "inst0", 0, 0)
 asynOctetSetInputEos("$(PORT)", 0, "\n")
 
@@ -31,8 +31,9 @@ asynOctetSetInputEos("$(PORT)", 0, "\n")
 #asynSetTraceIOMask("$(PORT)", -1, 0x2)
 
 dbLoadRecords("$(TOP)/db/TektronixAFG3K.template", "P=$(PREFIX), R=, PORT=$(PORT)")
-dbLoadRecords("$(TOP)/db/TektronixAFG3K_Output.template", "P=$(PREFIX), R=:, OUTPUT_NUM=1, PORT=$(PORT)")
-dbLoadRecords("$(TOP)/db/TektronixAFG3K_Source.template", "P=$(PREFIX), R=:, SOURCE_NUM=1, PORT=$(PORT)")
+dbLoadRecords("$(TOP)/db/TektronixAFG3K_Output.template", "P=$(PREFIX):, R=Output, OUTPUT_NUM=1, PORT=$(PORT)")
+dbLoadRecords("$(TOP)/db/TektronixAFG3K_Source.template", "P=$(PREFIX):, R=Source, SOURCE_NUM=1, PORT=$(PORT)")
+#dbLoadTemplate("$(TOP)/db/afg3011.substitutions")
 dbLoadRecords("$(EPICS_BASE)/db/asynRecord.db", "P=$(PREFIX):, R=AsynIO, PORT=$(PORT), ADDR=0, TIMEOUT=1, OMAX=0, IMAX=0")
 
 # dbLoadRecords("$(EPICS_BASE)/db/iocAdminSoft.db", "IOC=$(PREFIX)")

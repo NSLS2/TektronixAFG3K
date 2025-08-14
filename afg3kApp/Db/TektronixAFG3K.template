@@ -15,7 +15,6 @@ record(stringin, "$(P)$(R):Model") {
 record(stringin, "$(P)$(R):SerialNumber") {
     field(DESC, "Serial Number")
     field(DTYP, "Soft Channel")
-
 }
 
 record(stringin, "$(P)$(R):SystemVersion"){

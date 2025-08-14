@@ -1,0 +1,17 @@
+file TektronixAFG3K.template
+{
+pattern {P, R, PORT}
+{"TST:", "AFG3011", "AFG3K"}
+}
+
+file TektronixAFG3K_Output.template
+{
+pattern {P, R, PORT, OUTPUT_NUM}
+{"TST:", "AFG3011:Output", "AFG3K", "1"}
+}
+
+file TektronixAFG3K_Source.template
+{
+pattern {P, R, PORT, SOURCE_NUM}
+{"TST:", "AFG3011:Source", "AFG3K", "1"}
+}

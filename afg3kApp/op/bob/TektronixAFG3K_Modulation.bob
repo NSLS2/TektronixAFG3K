@@ -1,157 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <display version="2.0.0">
     <name>TektronixAFG3K_Modulation</name>
+    <widget type="rectangle" version="2.0.0">
+      <name>4020cdb8</name>
+      <x>0</x>
+      <y>6</y>
+      <transparent>true</transparent>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </line_color>
+      <width>490</width>
+      <height>155</height>
+    </widget>
     <widget type="label" version="2.0.0">
-      <name>17ec3163</name>
+      <name>c60d0245</name>
       <x>10</x>
-      <y>70</y>
+      <y>30</y>
       <width>150</width>
       <height>20</height>
       <text>Internal Frequency</text>
     </widget>
     <widget type="textentry" version="2.0.0">
-      <name>17f28cea</name>
+      <name>be11c631</name>
       <x>170</x>
-      <y>70</y>
+      <y>30</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):InternalFrequency</pv_name>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>0c26048d</name>
-      <x>10</x>
-      <y>110</y>
-      <width>150</width>
-      <height>20</height>
-      <text>Internal Frequency</text>
-    </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>1553fa99</name>
-      <x>170</x>
-      <y>110</y>
+      <name>63b496e6</name>
+      <x>330</x>
+      <y>30</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):InternalFrequency_RBV</pv_name>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>b138100c</name>
+      <name>2577e0ac</name>
       <x>10</x>
-      <y>150</y>
+      <y>60</y>
       <width>150</width>
       <height>20</height>
       <text>Internal Function</text>
     </widget>
     <widget type="combo" version="2.0.0">
-      <name>161e1441</name>
+      <name>988b65dd</name>
       <x>170</x>
-      <y>150</y>
+      <y>60</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):InternalFunction</pv_name>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>772e9def</name>
-      <x>10</x>
-      <y>190</y>
-      <width>150</width>
-      <height>20</height>
-      <text>Internal Function Status</text>
-    </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>788f95c8</name>
-      <x>170</x>
-      <y>190</y>
+      <name>eee665d7</name>
+      <x>330</x>
+      <y>60</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):InternalFunction_RBV</pv_name>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>5d208bbc</name>
+      <name>01f79092</name>
       <x>10</x>
-      <y>230</y>
+      <y>90</y>
       <width>150</width>
       <height>20</height>
       <text>Source</text>
     </widget>
     <widget type="choice" version="2.0.0">
-      <name>58d35809</name>
+      <name>a937e947</name>
       <x>170</x>
-      <y>230</y>
+      <y>90</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Source</pv_name>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>ce14c085</name>
-      <x>10</x>
-      <y>270</y>
-      <width>150</width>
-      <height>20</height>
-      <text>Source Status</text>
-    </widget>
     <widget type="led" version="2.0.0">
-      <name>b7e38f7f</name>
-      <x>170</x>
-      <y>270</y>
+      <name>e306b9bf</name>
+      <x>330</x>
+      <y>90</y>
       <width>20</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Source_RBV</pv_name>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>95f29423</name>
+      <name>05accbd0</name>
       <x>10</x>
-      <y>310</y>
+      <y>120</y>
       <width>150</width>
       <height>20</height>
       <text>Enable</text>
     </widget>
     <widget type="choice" version="2.0.0">
-      <name>2f7c9147</name>
+      <name>1866f3b3</name>
       <x>170</x>
-      <y>310</y>
+      <y>120</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Enable</pv_name>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>d64e3e72</name>
-      <x>10</x>
-      <y>350</y>
-      <width>150</width>
-      <height>20</height>
-      <text>Enable Status</text>
-    </widget>
     <widget type="led" version="2.0.0">
-      <name>5fe152c4</name>
-      <x>170</x>
-      <y>350</y>
+      <name>efa73a74</name>
+      <x>330</x>
+      <y>120</y>
       <width>20</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(SOURCE_NUM):$(MOD_TYPE):Enable_RBV</pv_name>
     </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>6ace46e1</name>
-      <x>0</x>
-      <y>0</y>
-      <width>330</width>
-      <height>50</height>
-    </widget>
     <widget type="label" version="2.0.0">
-      <name>ebaa1a28</name>
-      <x>0</x>
+      <name>aef1c40b</name>
+      <x>10</x>
       <y>0</y>
-      <width>330</width>
-      <height>50</height>
+      <width>480</width>
+      <height>10</height>
       <text>TektronixAFG3K_Modulation</text>
       <foreground_color>
         <color red="255" blue="255" green="255" alpha="255"/>
       </foreground_color>
+      <auto_size>true</auto_size>
       <font>
-        <font family="Liberation Sans" size="32" style="REGULAR"/>
+        <font family="Liberation Sans" size="18" style="REGULAR"/>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>2</border_width>
+      <border_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </border_color>
+      <background_color>
+        <color red="100" blue="100" green="100" alpha="255"/>
+      </background_color>
+      <transparent>false</transparent>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <height>1210</height>
-    <width>330</width>
+    <background_color>
+      <color red="179" blue="179" green="179" alpha="255"/>
+    </background_color>
+    <height>160</height>
+    <width>490</width>
   </display>

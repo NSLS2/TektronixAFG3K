@@ -1,93 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <display version="2.0.0">
     <name>TektronixAFG3K</name>
+    <widget type="rectangle" version="2.0.0">
+      <name>f274f671</name>
+      <x>0</x>
+      <y>6</y>
+      <transparent>true</transparent>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </line_color>
+      <width>330</width>
+      <height>155</height>
+    </widget>
     <widget type="label" version="2.0.0">
-      <name>330f1c35</name>
+      <name>4ceed135</name>
       <x>10</x>
-      <y>70</y>
+      <y>30</y>
       <width>150</width>
       <height>20</height>
       <text>Manufacturer</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>86b5493a</name>
+      <name>2fdca0af</name>
       <x>170</x>
-      <y>70</y>
+      <y>30</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R):Manufacturer</pv_name>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>cb80cca8</name>
+      <name>43fe0993</name>
       <x>10</x>
-      <y>110</y>
+      <y>60</y>
       <width>150</width>
       <height>20</height>
       <text>Model</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>0e8de86b</name>
+      <name>ab919321</name>
       <x>170</x>
-      <y>110</y>
+      <y>60</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R):Model</pv_name>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>afdb2aa8</name>
+      <name>6cae01b3</name>
       <x>10</x>
-      <y>150</y>
+      <y>90</y>
       <width>150</width>
       <height>20</height>
       <text>Serial Number</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>2c25d016</name>
+      <name>352c0421</name>
       <x>170</x>
-      <y>150</y>
+      <y>90</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R):SerialNumber</pv_name>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>f96dda11</name>
+      <name>4ed1cc7d</name>
       <x>10</x>
-      <y>190</y>
+      <y>120</y>
       <width>150</width>
       <height>20</height>
       <text>SCPI Version</text>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>179aa99b</name>
+      <name>d04690b3</name>
       <x>170</x>
-      <y>190</y>
+      <y>120</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R):SystemVersion</pv_name>
     </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>fb5fbe58</name>
-      <x>0</x>
-      <y>0</y>
-      <width>330</width>
-      <height>50</height>
-    </widget>
     <widget type="label" version="2.0.0">
-      <name>44953e27</name>
-      <x>0</x>
+      <name>5bb744fc</name>
+      <x>10</x>
       <y>0</y>
-      <width>330</width>
-      <height>50</height>
+      <width>320</width>
+      <height>10</height>
       <text>TektronixAFG3K</text>
       <foreground_color>
         <color red="255" blue="255" green="255" alpha="255"/>
       </foreground_color>
+      <auto_size>true</auto_size>
       <font>
-        <font family="Liberation Sans" size="32" style="REGULAR"/>
+        <font family="Liberation Sans" size="18" style="REGULAR"/>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>2</border_width>
+      <border_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </border_color>
+      <background_color>
+        <color red="100" blue="100" green="100" alpha="255"/>
+      </background_color>
+      <transparent>false</transparent>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <height>1210</height>
+    <background_color>
+      <color red="179" blue="179" green="179" alpha="255"/>
+    </background_color>
+    <height>160</height>
     <width>330</width>
   </display>
