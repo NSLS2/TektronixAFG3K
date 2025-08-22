@@ -303,7 +303,7 @@ getVoltageOffset {
 setAmplitude {
     wait 50;
     ExtraInput=Ignore;
-    out "SOUR\$1:VOLT:LEV:IMM:AMPL %fV";
+    out "SOUR\$1:VOLT:LEV:IMM:AMPL %f";
 }
 
 getAmplitude {
