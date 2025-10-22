@@ -1,0 +1,16 @@
+[workspace]
+authors = ["Jakub Wlodek <jwlodek@bnl.gov>"]
+channels = ["conda-forge"]
+name = "TektronixAFG3K"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+make-bobfiles = "epicsdb2bob afg3kApp/Db afg3kApp/op/bob -d -r _RBV -t minimal"
+
+[dependencies]
+python = ">=3.12.0,<3.13"
+
+[pypi-dependencies]
+epicsdbtools = { git = "https://github.com/jwlodek/epicsdbtools.git" }
+epicsdb2bob = { git = "https://github.com/NSLS2/epicsdb2bob.git" }

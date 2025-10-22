@@ -2,87 +2,159 @@
   <display version="2.0.0">
     <name>TektronixAFG3K</name>
     <widget type="rectangle" version="2.0.0">
-      <name>f274f671</name>
+      <name>cba4444d</name>
       <x>0</x>
-      <y>6</y>
+      <y>11</y>
       <transparent>true</transparent>
       <line_width>2</line_width>
       <line_color>
         <color red="0" blue="0" green="0" alpha="255"/>
       </line_color>
       <width>330</width>
-      <height>155</height>
+      <height>160</height>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>4ceed135</name>
+      <name>d9494224</name>
       <x>10</x>
-      <y>30</y>
+      <y>40</y>
       <width>150</width>
       <height>20</height>
       <text>Manufacturer</text>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>2fdca0af</name>
+      <name>cf68f9e4</name>
       <x>170</x>
-      <y>30</y>
+      <y>40</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R):Manufacturer</pv_name>
+      <foreground_color>
+        <color red="10" blue="184" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>43fe0993</name>
+      <name>dbc8aed6</name>
       <x>10</x>
-      <y>60</y>
+      <y>70</y>
       <width>150</width>
       <height>20</height>
       <text>Model</text>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>ab919321</name>
+      <name>b3ea7c6b</name>
       <x>170</x>
-      <y>60</y>
+      <y>70</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R):Model</pv_name>
+      <foreground_color>
+        <color red="10" blue="184" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>6cae01b3</name>
+      <name>9373d7fa</name>
       <x>10</x>
-      <y>90</y>
+      <y>100</y>
       <width>150</width>
       <height>20</height>
       <text>Serial Number</text>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>352c0421</name>
+      <name>c9cd90eb</name>
       <x>170</x>
-      <y>90</y>
+      <y>100</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R):SerialNumber</pv_name>
+      <foreground_color>
+        <color red="10" blue="184" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>4ed1cc7d</name>
+      <name>1899562c</name>
       <x>10</x>
-      <y>120</y>
+      <y>130</y>
       <width>150</width>
       <height>20</height>
       <text>SCPI Version</text>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>d04690b3</name>
+      <name>ba19e08c</name>
       <x>170</x>
-      <y>120</y>
+      <y>130</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R):SystemVersion</pv_name>
+      <foreground_color>
+        <color red="10" blue="184" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>5bb744fc</name>
+      <name>02565eaa</name>
       <x>10</x>
       <y>0</y>
       <width>320</width>
-      <height>10</height>
+      <height>20</height>
       <text>TektronixAFG3K</text>
       <foreground_color>
         <color red="255" blue="255" green="255" alpha="255"/>
@@ -96,14 +168,14 @@
         <color red="0" blue="0" green="0" alpha="255"/>
       </border_color>
       <background_color>
-        <color red="100" blue="100" green="100" alpha="255"/>
+        <color red="218" blue="218" green="218" alpha="255"/>
       </background_color>
       <transparent>false</transparent>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <background_color>
-      <color red="179" blue="179" green="179" alpha="255"/>
+      <color red="187" blue="187" green="187" alpha="255"/>
     </background_color>
-    <height>160</height>
+    <height>170</height>
     <width>330</width>
   </display>

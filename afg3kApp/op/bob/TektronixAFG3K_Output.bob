@@ -2,111 +2,204 @@
   <display version="2.0.0">
     <name>TektronixAFG3K_Output</name>
     <widget type="rectangle" version="2.0.0">
-      <name>0da67ee7</name>
+      <name>911d6f96</name>
       <x>0</x>
-      <y>6</y>
+      <y>11</y>
       <transparent>true</transparent>
       <line_width>2</line_width>
       <line_color>
         <color red="0" blue="0" green="0" alpha="255"/>
       </line_color>
       <width>490</width>
-      <height>155</height>
+      <height>160</height>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>6f17061f</name>
+      <name>e4090bbb</name>
       <x>10</x>
-      <y>30</y>
+      <y>40</y>
       <width>150</width>
       <height>20</height>
       <text>Ouput #</text>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>6876ee1b</name>
+      <name>fa002a5b</name>
       <x>170</x>
-      <y>30</y>
+      <y>40</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Name_RBV</pv_name>
+      <foreground_color>
+        <color red="10" blue="184" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>21b2c519</name>
+      <name>23317f13</name>
       <x>10</x>
-      <y>60</y>
+      <y>70</y>
       <width>150</width>
       <height>20</height>
       <text>Output Cmd</text>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="choice" version="2.0.0">
-      <name>0eb15cd1</name>
+      <name>81e0fad5</name>
       <x>170</x>
-      <y>60</y>
+      <y>70</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Enable</pv_name>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="115" blue="255" green="223" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="led" version="2.0.0">
-      <name>8dc2a2ab</name>
+      <name>82c4c66f</name>
       <x>330</x>
-      <y>60</y>
+      <y>70</y>
       <width>20</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Enable_RBV</pv_name>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>d3056dfc</name>
+      <name>a8d0557b</name>
       <x>10</x>
-      <y>90</y>
+      <y>100</y>
       <width>150</width>
       <height>20</height>
       <text>Polarity</text>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="choice" version="2.0.0">
-      <name>dd0c740c</name>
+      <name>c760f1be</name>
       <x>170</x>
-      <y>90</y>
+      <y>100</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Polarity</pv_name>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="115" blue="255" green="223" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="led" version="2.0.0">
-      <name>7e11d72f</name>
+      <name>5e3c227a</name>
       <x>330</x>
-      <y>90</y>
+      <y>100</y>
       <width>20</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Polarity_RBV</pv_name>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>13475b72</name>
+      <name>deca05e5</name>
       <x>10</x>
-      <y>120</y>
+      <y>130</y>
       <width>150</width>
       <height>20</height>
       <text>Impedance</text>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="textentry" version="2.0.0">
-      <name>ef47bbdb</name>
+      <name>afa4ca89</name>
       <x>170</x>
-      <y>120</y>
+      <y>130</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Impedance</pv_name>
+      <foreground_color>
+        <color red="0" blue="0" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="115" blue="255" green="223" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>9366a8cc</name>
+      <name>fc8f9d85</name>
       <x>330</x>
-      <y>120</y>
+      <y>130</y>
       <width>150</width>
       <height>20</height>
       <pv_name>$(P)$(R)$(OUTPUT_NUM):Impedance_RBV</pv_name>
+      <foreground_color>
+        <color red="10" blue="184" green="0" alpha="255"/>
+      </foreground_color>
+      <background_color>
+        <color red="187" blue="187" green="187" alpha="255"/>
+      </background_color>
+      <font>
+        <font family="Liberation Sans" size="16" style="REGULAR"/>
+      </font>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>6172c421</name>
+      <name>7ec83e87</name>
       <x>10</x>
       <y>0</y>
       <width>480</width>
-      <height>10</height>
+      <height>20</height>
       <text>TektronixAFG3K_Output</text>
       <foreground_color>
         <color red="255" blue="255" green="255" alpha="255"/>
@@ -120,14 +213,14 @@
         <color red="0" blue="0" green="0" alpha="255"/>
       </border_color>
       <background_color>
-        <color red="100" blue="100" green="100" alpha="255"/>
+        <color red="218" blue="218" green="218" alpha="255"/>
       </background_color>
       <transparent>false</transparent>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <background_color>
-      <color red="179" blue="179" green="179" alpha="255"/>
+      <color red="187" blue="187" green="187" alpha="255"/>
     </background_color>
-    <height>160</height>
+    <height>170</height>
     <width>490</width>
   </display>

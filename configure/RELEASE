@@ -4,7 +4,7 @@
 
 
 # EPICS_BASE usually appears last so other apps can override stuff:
-EPICS_BASE=/usr/lib/epics
+EPICS_BASE=/epics/src/base
 
 # These lines allow developers to override these RELEASE settings
 # without having to modify this file directly.
