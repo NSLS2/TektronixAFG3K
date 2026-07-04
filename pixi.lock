@@ -1,4 +1,11 @@
-version: 6
+version: 7
+platforms:
+- name: linux-64
+  virtual-packages:
+  - __unix=0=0
+  - __linux=4.18
+  - __glibc=2.28
+  - __archspec=0=x86_64
 environments:
   default:
     channels:
@@ -10,7 +17,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-2_gnu.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hda65f42_8.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2025.10.5-hbd8a1cb_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/ld_impl_linux-64-2.44-ha97dd6f_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.7.1-hecca717_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libffi-3.4.6-h2dba641_1.conda
@@ -28,6 +34,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/python-3.12.12-hfe2f287_0_cpython.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/readline-8.2-h8c095d6_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/tk-8.6.13-noxft_hd72426e_102.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2025.10.5-hbd8a1cb_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
       - pypi: git+https://github.com/NSLS2/epicsdb2bob.git#6cdb0843a4e657671b699056be451831abbf3e9f
       - pypi: git+https://github.com/jwlodek/epicsdbtools.git#27f2f545b44ce9e9139980f6736d2fa7431d3d27
@@ -65,47 +72,6 @@ packages:
   purls: []
   size: 260341
   timestamp: 1757437258798
-- conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2025.10.5-hbd8a1cb_0.conda
-  sha256: 3b5ad78b8bb61b6cdc0978a6a99f8dfb2cc789a451378d054698441005ecbdb6
-  md5: f9e5fbc24009179e8b0409624691758a
-  depends:
-  - __unix
-  license: ISC
-  purls: []
-  size: 155907
-  timestamp: 1759649036195
-- pypi: git+https://github.com/NSLS2/epicsdb2bob.git#6cdb0843a4e657671b699056be451831abbf3e9f
-  name: epicsdb2bob
-  version: 0.1.dev42+g6cdb0843a
-  requires_dist:
-  - phoebusgen
-  - epicsdbtools @ git+https://github.com/jwlodek/epicsdbtools
-  - copier ; extra == 'dev'
-  - pipdeptree ; extra == 'dev'
-  - pre-commit ; extra == 'dev'
-  - pyright ; extra == 'dev'
-  - pytest ; extra == 'dev'
-  - pytest-cov ; extra == 'dev'
-  - ruff ; extra == 'dev'
-  - tox-direct ; extra == 'dev'
-  - types-mock ; extra == 'dev'
-  - import-linter ; extra == 'dev'
-  requires_python: '>=3.11'
-- pypi: git+https://github.com/jwlodek/epicsdbtools.git#27f2f545b44ce9e9139980f6736d2fa7431d3d27
-  name: epicsdbtools
-  version: 0.1.dev44+g27f2f545b
-  requires_dist:
-  - copier ; extra == 'dev'
-  - pipdeptree ; extra == 'dev'
-  - pre-commit ; extra == 'dev'
-  - pyright ; extra == 'dev'
-  - pytest ; extra == 'dev'
-  - pytest-cov ; extra == 'dev'
-  - ruff ; extra == 'dev'
-  - tox-direct ; extra == 'dev'
-  - types-mock ; extra == 'dev'
-  - import-linter ; extra == 'dev'
-  requires_python: '>=3.11'
 - conda: https://conda.anaconda.org/conda-forge/linux-64/ld_impl_linux-64-2.44-ha97dd6f_2.conda
   sha256: 707dfb8d55d7a5c6f95c772d778ef07a7ca85417d9971796f7d3daad0b615de8
   md5: 14bae321b8127b63cba276bd53fac237
@@ -265,16 +231,6 @@ packages:
   purls: []
   size: 3119624
   timestamp: 1759324353651
-- pypi: https://files.pythonhosted.org/packages/24/07/47b797ef5dd22d1b293936aee48d04a1f3901d9b87f01fe719fe34de9100/phoebusgen-3.1.0-py3-none-any.whl
-  name: phoebusgen
-  version: 3.1.0
-  sha256: 3f757aee231a74c99999c4a6b5c4788a0d060a780d2ec9dacd0353dc6fabd38a
-  requires_dist:
-  - pre-commit ; extra == 'dev'
-  - sphinx ; extra == 'docs'
-  - sphinx-rtd-theme ; extra == 'docs'
-  - sphinx-autodoc-typehints ; extra == 'docs'
-  requires_python: '>=3.5'
 - conda: https://conda.anaconda.org/conda-forge/linux-64/python-3.12.12-hfe2f287_0_cpython.conda
   sha256: 5386d8c8230b6478ae165ff34f57d498891ac160e871629cbb4d4256e69cc542
   md5: ceada987beec823b3c702710ee073fba
@@ -325,6 +281,15 @@ packages:
   purls: []
   size: 3285204
   timestamp: 1748387766691
+- conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2025.10.5-hbd8a1cb_0.conda
+  sha256: 3b5ad78b8bb61b6cdc0978a6a99f8dfb2cc789a451378d054698441005ecbdb6
+  md5: f9e5fbc24009179e8b0409624691758a
+  depends:
+  - __unix
+  license: ISC
+  purls: []
+  size: 155907
+  timestamp: 1759649036195
 - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
   sha256: 5aaa366385d716557e365f0a4e9c3fca43ba196872abbbe3d56bb610d131e192
   md5: 4222072737ccff51314b5ece9c7d6f5a
@@ -332,3 +297,45 @@ packages:
   purls: []
   size: 122968
   timestamp: 1742727099393
+- pypi: git+https://github.com/NSLS2/epicsdb2bob.git#6cdb0843a4e657671b699056be451831abbf3e9f
+  name: epicsdb2bob
+  version: 0.1.dev42+g6cdb0843a
+  requires_dist:
+  - phoebusgen
+  - epicsdbtools @ git+https://github.com/jwlodek/epicsdbtools
+  - copier ; extra == 'dev'
+  - pipdeptree ; extra == 'dev'
+  - pre-commit ; extra == 'dev'
+  - pyright ; extra == 'dev'
+  - pytest ; extra == 'dev'
+  - pytest-cov ; extra == 'dev'
+  - ruff ; extra == 'dev'
+  - tox-direct ; extra == 'dev'
+  - types-mock ; extra == 'dev'
+  - import-linter ; extra == 'dev'
+  requires_python: '>=3.11'
+- pypi: git+https://github.com/jwlodek/epicsdbtools.git#27f2f545b44ce9e9139980f6736d2fa7431d3d27
+  name: epicsdbtools
+  version: 0.1.dev44+g27f2f545b
+  requires_dist:
+  - copier ; extra == 'dev'
+  - pipdeptree ; extra == 'dev'
+  - pre-commit ; extra == 'dev'
+  - pyright ; extra == 'dev'
+  - pytest ; extra == 'dev'
+  - pytest-cov ; extra == 'dev'
+  - ruff ; extra == 'dev'
+  - tox-direct ; extra == 'dev'
+  - types-mock ; extra == 'dev'
+  - import-linter ; extra == 'dev'
+  requires_python: '>=3.11'
+- pypi: https://files.pythonhosted.org/packages/24/07/47b797ef5dd22d1b293936aee48d04a1f3901d9b87f01fe719fe34de9100/phoebusgen-3.1.0-py3-none-any.whl
+  name: phoebusgen
+  version: 3.1.0
+  sha256: 3f757aee231a74c99999c4a6b5c4788a0d060a780d2ec9dacd0353dc6fabd38a
+  requires_dist:
+  - pre-commit ; extra == 'dev'
+  - sphinx ; extra == 'docs'
+  - sphinx-rtd-theme ; extra == 'docs'
+  - sphinx-autodoc-typehints ; extra == 'docs'
+  requires_python: '>=3.5'
