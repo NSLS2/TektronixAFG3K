@@ -34,7 +34,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/python-3.12.12-hfe2f287_0_cpython.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/readline-8.2-h8c095d6_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/tk-8.6.13-noxft_hd72426e_102.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2025.10.5-hbd8a1cb_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.10.23-hbd8a1cb_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
       - pypi: git+https://github.com/NSLS2/epicsdb2bob.git#6cdb0843a4e657671b699056be451831abbf3e9f
       - pypi: git+https://github.com/jwlodek/epicsdbtools.git#27f2f545b44ce9e9139980f6736d2fa7431d3d27
@@ -281,15 +281,16 @@ packages:
   purls: []
   size: 3285204
   timestamp: 1748387766691
-- conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2025.10.5-hbd8a1cb_0.conda
-  sha256: 3b5ad78b8bb61b6cdc0978a6a99f8dfb2cc789a451378d054698441005ecbdb6
-  md5: f9e5fbc24009179e8b0409624691758a
+- conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.10.23-hbd8a1cb_0.conda
+  sha256: 95619b9c1184be7175392eeb0ee7eeb5ccf25d280951f4225f2d62e725790be3
+  md5: 3fd02989038a1e1cee627c14c2d73f29
   depends:
   - __unix
   license: ISC
   purls: []
-  size: 155907
-  timestamp: 1759649036195
+  run_exports: {}
+  size: 130057
+  timestamp: 1792772446739
 - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
   sha256: 5aaa366385d716557e365f0a4e9c3fca43ba196872abbbe3d56bb610d131e192
   md5: 4222072737ccff51314b5ece9c7d6f5a
